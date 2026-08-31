@@ -9,6 +9,15 @@ else
    echo "Awww... You don't know the meaning of life"
 fi
 
+echo "What hour is it? Enter 0-23:"
+read hour
+
+if [ "$hour" -lt 12 ]; then
+    echo "Good morning!"
+else
+    echo "It is not morning."
+fi
+
 #  here are some other arithemetic comparison operators
 # -eq -ne -gt -ge -lt -le
 
