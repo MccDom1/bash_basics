@@ -9,13 +9,14 @@ else
    echo "Awww... You don't know the meaning of life"
 fi
 
-echo "What hour is it? Enter 0-23:"
+
+echo "Enter the current hour from 0-23:"
 read hour
 
-if [ "$hour" -lt 12 ]; then
-    echo "Good morning!"
+if [ "$hour" -ge 6 ] && [ "$hour" -lt 12 ]; then
+    echo "Yes, it is morning!"
 else
-    echo "It is not morning."
+    echo "No, it is not morning."
 fi
 
 #  here are some other arithemetic comparison operators
